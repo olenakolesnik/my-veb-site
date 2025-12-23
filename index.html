@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Інтернет-магазин спортивних товарів</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;500;600;700&family=Inter:wght@400;600;700&family=DM+Sans:wght@600&display=swap"
+        rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+            integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link
+rel="stylesheet" 
+href="./css/styles.css" 
+/>
+ </head>
+<body>
+ <header class="header container">
+    <div class="header-container">
+        <div class="header-label-box">
+        <a class="header-logo" href="./index.html">
+            <img class="header-logo-img" src="./images/logo.webp" alt="logo" width="86" height="24px">
+        </a>
+        <div class="header-box">
+        <label class="header-label" for="header-input">
+            <input type="text" id="header-input" class="header-input" name="header-input" placeholder="Пошук">
+        </label>
+        <button class="burger-btn" type="button">
+            <svg class="burger-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-search"></use>
+            </svg>
+        </button>
+        <button class="open-modal-btn" type="button">
+            <svg class="burger-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+            </svg>
+        </button>
+        <button class="header-burger-btn" type="button">
+            <svg class="burger-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-cart"></use>
+            </svg>
+        </button>
+        <button class="burger-btn" type="button" aria-label="Відкрити меню">
+            <svg class="burger-icon" width="24" height="24">
+                <use href="./images/icons.svg#icon-heroicons-solid_menu"></use>
+            </svg>
+        </button>
+    </div>
+    </div>
+    <div class="backdrop">
+        <div class="modal">
+            <button class="modal-close-btn" type="button">
+                <svg class="close-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                </svg>
+            </button>
+            <h2 class="modal-subtitle">Реєстрація</h2>
+            <form class="register-form">
+                <label for="user-email" class="modal-input-label">Email</label>
+                    <input type="email" class="modal-input" name="user-email" id="user-email"/>   
+                    <label for="user-password" class="modal-input-label">Password</label>
+                    <input type="password" class="modal-input" name="user-password" id="user-password" />
+                <button class="register-btn" type="submit">Зареєструватися</button>
+                </form>
+        </div>
+    </div>
+        <nav class="header-nav">
+            <ul class="header-menu-list">
+                <li class="header-menu-item"><a class="header-menu-link" href="./index.html">Головна</a></li>   
+                <li class="header-menu-item"><a class="header-menu-link" href="">Каталог товарів</a>
+                    </li> 
+                    <li class="header-menu-item"><a class="header-menu-link" href="">Доставка та оплата</a></li>
+                    <li class="header-menu-item"><a class="header-menu-link" href="">Співпраця</a></li>
+                    <li class="header-menu-item"><a class="header-menu-link" href="">Контакти</a></li>
+                    <li class="header-menu-item"><a class="header-menu-link" href="">Блог</a></li>
+            </ul>
+        </nav>
+        <div class="header-btn-box">
+        <nav class="mobile-menu">
+            <button class="close-btn" type="button">
+                <svg class="close-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-cross"></use>
+                    </svg>
+            </button>
+        <ul class="mobile-menu-list">
+                <li><a href="#">Головна</a></li>
+                <li><a href="#">Знижки</a></li>
+                <li><a href="#">Каталог товарів</a></li>
+                <li><a href="#">Тхеквондо</a></li>
+                <li><a href="#">Карате</a></li>
+                <li><a href="#">Нагородна атрибутика</a></li>
+                <li><a href="#">Доставка та оплата</a></li>
+                <li><a href="#">Співпраця</a></li>
+                <li><a href="#">Контакти</a></li>
+                <li><a href="#">Блог</a></li>
+                <li><a href="#">Вхід</a></li>
+                <li><a href="#">Реєстрація</a></li>
+                <li><a href="#">Кошик</a></li>
+        </ul>
+            <address class="mobile-contacts">
+                <ul class="mobile-contacts-list">
+                    <li class="mobile-contacts-item"><a class="mobile-contacts-link" href="tel:+380967991438">+38 (096) 799-14-38</a>
+                    </li>
+                    <li class="mobile-contacts-item"><a class="mobile-contacts-link"
+                            href="mailto:o.a.wtf2018@gmail.com">o.a.wtf2018@gmail.com</a></li>
+                </ul>
+                </address> 
+                <p class="mobile-text">Понеділок-П'ятниця</p>
+                <p class="mobile-text">09:00-18:00</p>  
+                <ul class="mobile-social-list">
+                    <li class="mobile-social-item">
+                        <a class="mobile-icon-circle" href="https://www.facebook.com/edinoborstva.kiev">
+                            <svg class="mobile-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-Facebook"></use>
+                            </svg>
+                        </a>
+                    </li>
+                    <li class="mobile-social-item">
+                        <a class="mobile-icon-circle"
+                            href="https://www.instagram.com/sksportin?fbclid=IwY2xjawO02r1leHRuA2FlbQIxMABicmlkETFlQkdTQUhvSktqbkROQTM3c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHphBnzEm8qR7hOPTb9AA9UXJld90WN8gocSj4CF9AB45Qlvcb1nQ0cfKfTWX_aem_Dig9oHBiC6lqEbXe19YP3Q">
+                            <svg class="mobile-icon" width="24" height="24">
+                                <use href="./images/icons.svg#icon-Instagram"></use>
+                            </svg>
+                        </a>
+                    </li></ul>
+         </nav>
+    </div>
+    </div>
+ </header>   
+<main>
+    <!-- HERO -->
+<section class="hero">
+    <div class="container hero-container">
+        <div class="hero-text-container">
+<h1 class="hero-title">Бойові мистецтва починаються<br>з правильного спорядження</h1>
+<button class="hero-btn" type="button">Купити</button>
+</div>
+<div class="hero-img-container">
+    <picture>
+        <source
+        srcset="./images/Boy1x.webp 1x, ./images/Boy2x.webp 2x"
+        media="(min-width: 1440px)"
+        />
+        <source srcset="./images/Boytab1x.webp 1x, ./images/Boytab2x.webp 2x" media="(min-width: 768px)" />
+        <source srcset="./images/Boymob1x.webp 1x, ./images/Boymob2x.webp 2x" media="(max-width: 767px)" />
+        <img class="hero-img" 
+        src="./images/Boy1x.webp"
+    alt="photo boy taekwondo" width="320" />
+</picture>
+</div>
+</div>
+</section>
+<!-- FEAUTURE -->
+ <section class="feauture">
+    <div class="container">
+        <h2 class="feauture-title">Топ продажів</h2>
+        <ul class="feauture-list">
+            <li class="feauture-item">
+                <a class="feauture-link" href="">
+                    <img class="feauture-img" src="./images/Рукавиці.webp" alt="Рукавиці" width="320" height="320">
+                    <h2 class="feauture-subtitle">Рукавиці Taekwondo</h2>
+                </a>
+                <p class="feauture-text">BO-2310, PU, р-р XS-L</p>
+                    <p class="feauture-price">415грн</p>
+                <button class="feauture-btn" type="button">Купити</button>
+            </li>
+            <li class="feauture-item">
+                <a class="feauture-link" href="">
+                    <img class="feauture-img" src="./images/Боксерські рукавиці.webp" alt="Боксерські рукавиці" width="320" height="320">
+                    <h2 class="feauture-subtitle">Боксерські рукавиці</h2>
+                </a>
+                <p class="feauture-text">BO-5698, PU, 10-12oz</p>
+                    <p class="feauture-price">890грн</p>
+                <button class="feauture-btn" type="button">Купити</button>
+            </li>
+            <li class="feauture-item">
+                <a class="feauture-link" href="">
+                    <img class="feauture-img" src="./images/Захисна маска.webp" alt="Маска" width="320" height="320">
+                    <h2 class="feauture-subtitle">Захисна маска</h2>
+                </a>
+                <p class="feauture-text">BO-0398, пластик, р-р S/M, L/XL</p>
+                    <p class="feauture-price">495грн</p>
+                <button class="feauture-btn" type="button">Купити</button>
+            </li>
+            <li class="feauture-item">
+                <a class="feauture-link" href="">
+                    <img class="feauture-img" src="./images/Захист гомілки.webp" alt="Захист гомілки" width="320" height="320">
+                    <h2 class="feauture-subtitle">Захист гомілки</h2>
+                </a>
+                <p class="feauture-text">BO-4081, PU, р-р S-L</p>
+                    <p class="feauture-price">550грн</p>
+                <button class="feauture-btn" type="button">Купити</button>
+            </li>
+        </ul>
+    </div>
+ </section>
+ <!-- ABOUT -->
+  <section class="about">
+    <div class="container">
+        <h2 class="about-title">Про нас</h2>
+        <div class="about-box">
+        <ul class="about-list">
+            <li class="about-item">
+        <img class="about-img" src="./images/delivery-truck.webp" alt="Швидка доставка" width="160" height="160">
+        <span class="about-subtitle">Швидка доставка</span>
+    </li>
+    <li class="about-item">
+        <img class="about-img" src="./images/money.webp" alt="Доступні ціни" width="160" height="160">
+        <span class="about-subtitle">Доступні ціни</span>
+    </li>
+    <li class="about-item">
+        <img class="about-img last" src="./images/refund.webp" alt="Обмін та повернення" width="160" height="160">
+        <span class="about-subtitle">Обмін/повернення</span>
+    </li>
+    </ul>
+        <p class="about-text">У нашому інтернет-магазині Ви зможете підібрати весь комплект необхідної екіпіровки для Taekwondo WT (WTF), Karate,
+        Боксу та багато інших видів єдиноборств. Також представлений великий асортимент товарів для фітнесу, занять йогою, для
+        активного відпочинку та туризму.
+        Ми пропонуємо якісну продукцію за сприятливими цінами, на будь-який смак та для різного бюджету. На ринку продажів
+        товарів для єдиноборств більше 10-ти років. Ми надаємо нашим клієнтам допомогу щоб якнайточніше обрати необхідний розмір
+        екіпіровки. У випадку, якщо необхідно обміняти на інший розмір чи повернути товар, Ви можете зробити це протягом 14
+        днів.
+        Наша ціль допомогти спортсменам зробити заняття улюбленим видом спорту безпечним та комфортним.
+        Ми співпрацюємо з тренерами, президентами федерацій, спортивними магазинами, клубами. На сайті вказані роздрібні ціни,
+        також є товари, які можна придбати оптом зі знижкою в ціні.</p>
+    </div>
+</div>
+  </section>
+</main>
+<footer class="foot">
+    <div class="container foot-container">
+        <div class="foot-contacns-box">
+            <p class="foot-subtitle">Контакти</p>
+     <address class="foot-contacts">
+        <ul class="foot-contacts-list">
+            <li class="foot-contacts-item"><a class="foot-contacts-link" href="tel:+380967991438">+38 (096) 799-14-38</a></li>
+            <li class="foot-contacts-item"><a class="foot-contacts-link" href="mailto:o.a.wtf2018@gmail.com">o.a.wtf2018@gmail.com</a></li>
+            </ul>
+    </address> 
+</div>
+    <div class="foot-text-box">
+    <p class="foot-subtitle">Графік роботи</p>
+    <p class="foot-text">Понеділок-П'ятниця</p>
+    <p class="foot-text">09:00-18:00</p>
+</div>
+<div class="foot-social-container">
+        <p class="foot-subtitle">Соціальні марежі</p>
+         <ul class="foot-social-list">
+            <li class="foot-social-item">
+                <a class="foot-icon-circle" href="https://www.facebook.com/edinoborstva.kiev">
+                <svg class="foot-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Facebook"></use>
+                </svg>
+            </a>
+        </li>
+        <li class="foot-social-item">
+            <a class="foot-icon-circle" href="https://www.instagram.com/sksportin?fbclid=IwY2xjawO02r1leHRuA2FlbQIxMABicmlkETFlQkdTQUhvSktqbkROQTM3c3J0YwZhcHBfaWQQMjIyMDM5MTc4ODIwMDg5MgABHphBnzEm8qR7hOPTb9AA9UXJld90WN8gocSj4CF9AB45Qlvcb1nQ0cfKfTWX_aem_Dig9oHBiC6lqEbXe19YP3Q">
+                <svg class="foot-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-Instagram"></use>
+                </svg>
+            </a>
+        </li>
+         </ul>   
+        </div>
+    </div>
+
+</footer>
+<script src="./js/mob-menu.js"></script>
+<script src="./js/modal.js"></script>
+</body>
+</html>
