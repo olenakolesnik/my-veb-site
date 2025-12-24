@@ -198,12 +198,8 @@ padding: 16px 20px;
         line-height: 133%;
         text-align: center;
 }
-.modal-input-label {
-    display: block;
-    margin-bottom: 10px;
-    width: 100%;
-  }
   .modal-input {
+    margin-top: 10px;
     margin-bottom: 15px;
     border: 1px solid rgba(46, 47, 66, 0.4);
     border-radius: 8px;
@@ -223,8 +219,18 @@ padding: 16px 20px;
     border: none;
     background-color: transparent;
 }
+::placeholder {
+    padding-left: 6px;
+}
+.form-error {
+    display: block;
+    margin-top: 4px;
+    font-size: 12px;
+    color: #e63946;
+}
 
-
+.form-input.error {
+    border-color: #e63946; }
 /* MEDIA TABLET */
 @media screen and (min-width: 768px) {
     .container {
@@ -242,6 +248,30 @@ padding: 16px 20px;
         width: 32px;
         height: 32px;
     }
+    .modal {
+        width: 400px;
+    }
+    .modal-subtitle {
+        font-size: 20px;
+        margin-bottom: 15px;  
+     }
+     .modal-input {
+        height: 32px;
+     }
+         .register-btn {
+             min-width: 142px;
+             height: 42px;
+             font-weight: 600;
+             font-size: 16px;
+      }
+      .form-error {
+        font-size: 14px;
+        margin-top: 2px;
+      }
+          .close-icon {
+              width: 32px;
+              height: 32px;
+          }
 }
 
 /* MEDIA DESCTOP */
@@ -325,6 +355,36 @@ padding: 16px 20px;
     .register-btn:focus {
         background-color: #1c2685;
     }
+        .modal {
+            width: 600px;
+            padding: 48px;
+        }
+    
+        .modal-subtitle {
+            font-size: 24px;
+            margin-bottom: 15px;
+        }
+    .close-icon {
+        width: 48px;
+        height: 48px;
+    }
+        .modal-input {
+            height: 52px;
+        }
+    
+        .register-btn {
+            min-width: 182px;
+            height: 52px;
+            font-size: 18px;
+        }
+    
+        .form-error {
+            font-size: 16px;
+            margin-top: 2px;
+        }
+        ::placeholder {
+            font-size: 18px;
+        }
 }
 
 /* HERO */
